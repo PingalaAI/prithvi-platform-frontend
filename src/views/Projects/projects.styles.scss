@@ -1,0 +1,13 @@
+.project-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.project-head > h3 {
+  padding-left: 20px;
+}

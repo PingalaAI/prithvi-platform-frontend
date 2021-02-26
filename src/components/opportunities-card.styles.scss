@@ -1,0 +1,20 @@
+.filters-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 45vh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  align-self: start;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

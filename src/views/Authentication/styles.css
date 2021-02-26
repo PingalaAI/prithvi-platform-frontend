@@ -1,0 +1,70 @@
+.login-main {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.anim-ctr {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+.main-ctr {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80vh;
+  width: 80vw;
+  border-radius: 4px;
+  margin: auto;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.294);
+  overflow: hidden;
+  background-color: white;
+}
+.ctr-2 {
+  width: 100%;
+}
+.ctr-1 {
+  position: relative;
+  z-index: 9;
+  background-color: #20253b;
+  height: 100%;
+  width: 70%;
+  color: white;
+}
+.sign_in_wrapper {
+  margin: auto;
+  margin-top: 40%;
+  width: 80%;
+}
+.sign_in_wrapper h1 {
+  font-size: 2rem;
+}
+.sign_in_wrapper p {
+  font-size: 1.2rem;
+}
+.sign_in_wrapper button {
+  border: 1.3px solid white;
+  color: white;
+  background: transparent;
+  outline: none;
+  padding: 0.6rem 3rem;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-size: 100;
+  margin: 1rem;
+  transition: all ease 0.4s;
+}
+.ctr-1 button:hover {
+  border: 2px solid white;
+}
+.MuiButton-containedPrimary {
+  background-color: #20253b !important;
+}

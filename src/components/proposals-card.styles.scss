@@ -1,0 +1,17 @@
+.button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.fab-center {
+  text-align: center;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}

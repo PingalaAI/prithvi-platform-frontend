@@ -1,0 +1,19 @@
+.proposals-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.proposals-head > h3 {
+  padding-left: 20px;
+}
+
+.problem-card {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
