@@ -41,6 +41,7 @@ export default function ProblemDataCard() {
       <CardContent>
         <Grid container spacing={3}>
           <Grid item xs={12}>
+            <p>some text here</p>
             {/* <form noValidate autoComplete="off">
               <TextField
                 id="outlined-basic"
@@ -50,6 +51,7 @@ export default function ProblemDataCard() {
               />
             </form> */}
             <Dropzone
+              styles={{ overflow: "hidden !important" }}
               getUploadParams={getUploadParams}
               onChangeStatus={handleChangeStatus}
               onSubmit={handleSubmit}

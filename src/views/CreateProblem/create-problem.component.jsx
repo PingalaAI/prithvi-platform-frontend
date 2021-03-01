@@ -73,6 +73,9 @@ export default function CreateProblem() {
         </div>
       </div>
       <div className="problem-card">
+        <ProblemDataCard />
+      </div>
+      <div className="problem-card">
         <ProblemDetailsCard setData={handleChange} />
       </div>
       <div className="problem-card">
@@ -85,9 +88,6 @@ export default function CreateProblem() {
       </div>
       <div className="problem-card">
         <ProblemEpicsCard epicsData={epics} setEpicsData={setEpics} />
-      </div>
-      <div className="problem-card">
-        <ProblemDataCard />
       </div>
       <div
         style={{ textAlign: "center", marginTop: "20px", marginBottom: "20px" }}

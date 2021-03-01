@@ -10,6 +10,9 @@ import ProjectCard from "../../components/project-card.component.";
 import OpportunitiesCard from "../../components/opportunities-card.component";
 import PendingProposalCard from "../../components/pending-proposal-card.component";
 import sort from "../../assets/sort-icon.svg";
+import AddCircleIcon from "@material-ui/icons/AddCircle";
+import CardContent from "@material-ui/core/CardContent";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -106,9 +109,30 @@ export default function Home() {
                 inputProps={{ "aria-label": "search" }}
               />
             </div>
-            <div className="sort-icon">
+            <Link
+              to="/createProblem"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <Button
+                variant="contained"
+                color="primary"
+                style={{
+                  padding: "0.4rem 0.8rem !important",
+                  marginLeft: "1rem",
+                }}
+              >
+                <AddCircleIcon
+                  fontSize="40"
+                  style={{ marginRight: "8px", color: "white" }}
+                />
+                <p style={{ fontSize: "0.8rem", lineHeight: "0" }}>
+                  Add New Problem
+                </p>
+              </Button>
+            </Link>
+            {/* <div className="sort-icon">
               <img src={sort} alt="sort-icon" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

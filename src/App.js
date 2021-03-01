@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Router history={hist}>
-        <Redirect to="/login" />
+        {/* <Redirect to="/login" /> */}
         <Switch>
           <Route exact path="/login" component={Auth} />
           <Route path="/" component={Dashboard} />

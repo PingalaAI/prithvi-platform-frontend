@@ -37,7 +37,7 @@ export default function CreateProposal() {
   useEffect(() => {
     console.log("all data: ", {
       title: payload_name,
-      stories: payload_stories,
+      epics: payload_stories,
       resource: payload_resources,
       comment: payload_comment,
       problem: data.title,
@@ -49,20 +49,23 @@ export default function CreateProposal() {
       axios
         .post("http://20.185.145.180:8000/v1/proposals/", {
           title: payload_name,
-          stories: payload_stories,
+          epics: payload_stories,
           resource: payload_resources,
           comment: payload_comment,
           problem: data.title,
         })
         .then((res) => {
           console.log("resp", res);
+          if(res.status===200){
+            alert('proposal created !');
+          }
         })
         .catch((err) => {
           console.log("err!!", err.message);
         });
     }
   }, [payload_stories]);
-  
+
   return (
     <div className={classes.root}>
       <div className="proposals-head">
